@@ -19,6 +19,11 @@
         --lg: 18px;
 }
 
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body{
             margin: 0;
         }
@@ -48,7 +53,7 @@
         .title{
 
             font-size: var(--lg);
-            margin-bottom: 30px;
+            margin-bottom: 36px;
             text-align: start;
            
         }
@@ -56,8 +61,8 @@
         
 
         .form{
+           /* display: flex;*/
 
-            display: flex;
             flex-direction: column;
 
         }
@@ -114,8 +119,8 @@
 
         @media (max-width: 640px){
 
-            .form-container{
-                height: 200%;
+            .form div{
+                height: 100%;
                 
             }
             .form{
@@ -137,28 +142,24 @@
         <div class="form-container">
             
 
-            <h1 class="title">Create a new password</h1>
+            <h1 class="title">My account</h1>
             
            
             <form action="/" class="form">
                 <div>
                 <label for="name" class="label">Name</label>
-                
                 <input type="text"
                 id="name"
                 placeholder="**********"
                 class="input input-name">
 
                 <label for="email" class="label">Email</label>
-
                 <input type="text"
                 id="email"
                 placeholder="Platzi@example.com"
                 class="input input-email">
 
                 <label for="password" class="label">Password</label>
-            
-                
                 <input type="password"
                 id="password"
                 placeholder="**********"
