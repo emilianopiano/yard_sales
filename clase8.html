@@ -30,35 +30,111 @@
            
         }
 
+    .my-order{
+        width: 100%;
+        height: 100%;
+        display:grid;
+        place-items: center;
+    }
+    
+    .title{
+
+        font-size: var(--lg);
+        margin-bottom: 40px;
+    }
+
+    .my-order-container{
+
+        display: grid;
+        grid-template-rows: auto auto auto;
+        width: 300px;
+    }
+
+    .my-order-content{
+         display: flex;
+        flex-direction: column;
+    }
+
+    .order{
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--text--input-field);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+    }
+
+    .order p:nth-child(1){
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .order span:nth-child(1){
+
+        font-size: var(--sm);
+        font-weight: bold;
+
+        }
+
+    .order span:nth-child(2){
+
+        font-size: var(--sm);
+        color: var(--very--light-pink);
+        }
+
+        .order p:nth-child(2){
+
+            text-align: end;
+            font-weight: bold;
+
+}
+
+
+    .shopping-cart{
+
+        display: grid;
+        grid-template-columns: auto 150px auto auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+
+    }
+
+    .shopping-cart figure{
+
+        margin: 0;
+    }
+
+    .shopping-cart p:nth-child(2){
+        color: var(--very--light-pink);
+    }
+
+    .shopping-cart p:nth-child(3){
+        
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    
 </style>
 </head>
 <body>
-    <div class="my-order">
+<div class="my-order">
 
-        <div class="my-order-containes">
+        <div class="my-order-container">
 
-            <div class=" my-order-content">
-                <div>
-                    <p>
-                        <span>03.25.21</span>
-                        <span>6 articles</span>
+            <h1 class="title">My order</h1>
 
-                    </p>
-                    <p>$560.00</p>
-                </div>
-            </div>
-
-            <div class="shopping-cart">
-            <figure>
-                <img src="/" alt="">
-            </figure>
-            <p>Bike</p>
-            <p>$30,00</p>
-            </div>
+        <div>
 
             
-            <div class=" my-order-content">
-                <div>
+
+            <div class="my-order-content">
+                <div class="order">
                     <p>
                         <span>03.25.21</span>
                         <span>6 articles</span>
@@ -67,39 +143,36 @@
                     <p>$560.00</p>
                 </div>
             </div>
-
-            <div class="shopping-cart">
-            <figure>
-                <img src="/" alt="">
-            </figure>
-            <p>Bike</p>
-            <p>$30,00</p>
-            </div>
-
             
-            <div class=" my-order-content">
-                <div>
-                    <p>
-                        <span>03.25.21</span>
-                        <span>6 articles</span>
-
-                    </p>
-                    <p>$560.00</p>
-                </div>
-            </div>
 
             <div class="shopping-cart">
             <figure>
-                <img src="/" alt="">
+                <img src="./Cara.png" alt="">
             </figure>
             <p>Bike</p>
             <p>$30,00</p>
             </div>
+
+            <div class="shopping-cart">
+            <figure>
+                <img src="./Cara.png" alt="">
+            </figure>
+            <p>Bike</p>
+            <p>$30,00</p>
+            </div>
+
+            <div class="shopping-cart">
+            <figure>
+                <img src="./Cara.png" alt="">
+            </figure>
+            <p>Bike</p>
+            <p>$30,00</p>
+            </div>
+        
+        </div>    
 
         </div>
-
-
-    </div>
+</div>
     
 </body>
 </html>
